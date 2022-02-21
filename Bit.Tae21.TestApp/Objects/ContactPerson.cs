@@ -14,6 +14,8 @@ namespace Bit.Tae21.TestApp.Objects
 
         public string LastName { get; set; }
 
+        public List<Order> Orders { get; set; } = new List<Order>();
+
         #endregion
     }
 }
