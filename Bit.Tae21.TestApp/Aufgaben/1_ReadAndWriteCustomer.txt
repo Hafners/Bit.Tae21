@@ -1,0 +1,16 @@
+﻿// Zielzeit: 08:40 Uhr
+// 1. Eine Konsolenanwendung anlegen.
+// 2. Eine Klasse Lieferant anlegen mit folgenden Properties:
+//      - Id int
+//      - Lieferantennummer int
+//      - Namen string
+//      - Postleitzahl string
+//      - Ort string
+//      - Straße string
+//      - Land string
+// 3. Die Lieferanteninformationen über die Konsole einlesen und in der Klasse 
+//    Lieferant Speichern (Alle Fragen in roter Schrift).
+
+// 4. Die Lieferanteninformationen auf der Konsole mit grüner Schrift ausgeben.
+// 5. Ändere dein Program so, dass du eine Liste von Lieferanten einlesen kannst und mit
+//    der Eingabe "Ende" das Program zum Ende kommt.

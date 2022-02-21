@@ -1,0 +1,15 @@
+﻿ // 1. Lege eine Klasse Kontaktperson mit folgenden Properties an:
+//      - Id
+//      - FirstName
+//      - LastName
+// 2. Füge zu dem bestehenden Program die Funktionalität hinzu,
+//      dass zu jedem Kunden beliebig viele Kontaktpersonen hinzugefügt werden
+//      können.
+// 3. Gib am Ende alle Kunden & Kontaktpersonen aus.
+// 4. Lege eine Klasse Bestellung an mit folgenden Properties:
+//    - Id, Bestelldatum, Warenwert Gesamt
+// 5. Lege eine Klasse Bestellposition an mit folgenden Properties:
+//    - Id, Artikelname, Betrag
+// 6. Füge die Bestellpositionen als Liste zur Bestellung hinzu
+// 7. Erstelle die Funktionalität, dass zu jeder Kontaktperson beliebig 
+//    viele Bestellungen erfasst werden können.

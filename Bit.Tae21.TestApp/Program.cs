@@ -4,20 +4,80 @@ using System.Collections.Generic;
 
 namespace Bit.Tae21.TestApp
 {
+    class Lieferant
+    {
+        public int Age { get; set; }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            // 1.) Eigenes Objekt anlegen {Nachname + Objektname} im Ornder Objects
-            // 2.) Eigene Liste in Program.cs in der Methode Main deklarieren
-            // 3.) Die eigene Liste mithilfe der foreach Methode ausgeben und debuggen
-            // 4.) Die eigene Liste mithilfe von einer Benutzereingabe erweitern
-            // 5.) Die Benutzereingaben dynamisch oft durchlaufen (z.B. do-while Schleife)
-            // 6.) Den Programmcode von Program.cs - Main in eine separate Klasse {Nachname + Main}
-            //     einfügen im Ordner "Main"
-            // 7.) Alle Änderungen auf GitHub hochladen
+            Customer customer1 = new Customer()
+            {
+                Id = 1,
+                 Age = 28,
+                  Name = "Heinz",
+                 
+            };
 
-            // Zielzeit: 09:35
+            customer1.ContactPersons.Add(
+                new ContactPerson { Id = 2, FirstName = "Melanie", LastName = "Ober" });
+
+
+
+
+
+
+
+            List<Lieferant> lieferanten = new List<Lieferant>();
+
+            string exitCommand = string.Empty;
+            do
+            {
+                Lieferant lieferant = new Lieferant();
+
+                Console.WriteLine("Bitte geben Sie das Alter ein");
+                string userInput = Console.ReadLine();
+                bool isValid = int.TryParse(userInput, out int parsedInput);
+                if (isValid)
+                {
+
+                lieferant.Age = parsedInput;
+                }
+
+                Console.WriteLine("Wollen Sie die Eingabe beenden?");
+                exitCommand = Console.ReadLine();
+
+                lieferanten.Add(lieferant);
+
+            } while (exitCommand != "Exit");
+            
+            foreach(Lieferant lieferant in lieferanten)
+            {
+                Console.WriteLine($"Alter: {lieferant.Age}");
+            }
+
+           
+
+
+
+
+
+
+            
+            
+            
+             
+
+
+
+
+
+
+
+
+            
         }
     }
 }
